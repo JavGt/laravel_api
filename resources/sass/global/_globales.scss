@@ -1,0 +1,32 @@
+@use 'variables' as v;
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+@media (min-width: 2600px) {
+    html {
+        font-size: 100%; /*1rem = */
+    }
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.heading{
+    color: v.$azul;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    font-family: v.$fuente_p;
+}

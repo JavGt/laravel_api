@@ -1,0 +1,24 @@
+@use "../global/variables" as v;
+
+.bienvenido {
+    h1 {
+        font-size: 7rem;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: v.$fuente_p;
+
+    p {
+        font-size: 4rem;
+    }
+    a {
+        font-size: 3rem;
+        background-color: v.$rosa;
+        padding: 2rem 3rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        color: v.$blanco;
+    }
+}

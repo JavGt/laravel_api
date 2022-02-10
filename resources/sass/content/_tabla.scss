@@ -1,0 +1,61 @@
+@use "../global/variables" as v;
+@use "../global/mixins" as m;
+
+.tabla {
+    border-collapse: collapse;
+    thead {
+        background-color: v.$rosa;
+
+        th {
+            font-family: v.$fuente_p;
+            padding: 1rem 0;
+            color: v.$blanco;
+            font-size: 1.7rem;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+    tbody {
+        img {
+            width: 8rem;
+        }
+        tr {
+            transition: 0.2s ease-in-out;
+            &:hover {
+                background-color: v.$gris;
+            }
+        }
+        td {
+            font-size: 1.4rem;
+            text-align: center;
+            font-family: v.$fuente_p;
+        }
+
+        .acciones {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 0.5rem;
+
+            a {
+                display: block;
+                background-color: v.$azul;
+                padding: .5rem 1rem;
+                margin: 0;
+                text-decoration: none;
+                border-radius: 0.5rem;
+                color: white;
+            }
+            input {
+                cursor: pointer;
+                display: block;
+                background-color: red;
+                color: white;
+                border-radius: 0.5rem;
+                border: none;
+                padding: .5rem 1rem;
+                margin: 0;
+            }
+        }
+    }
+}
